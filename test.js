@@ -4,6 +4,7 @@ const IUCNRedList = require('./main.js');			// Main API Wrapper
 const config = require('./config.json');			// Config / API Tokens
 
 // Sets the API Key to an empty string if undefined
+// The property is not included in example_config.json
 const API_KEY = typeof config.testtoken != 'undefined' ? config.testtoken : '';
 
 // Creates the Wrapper API Class
